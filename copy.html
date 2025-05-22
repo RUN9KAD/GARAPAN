@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Copy Teks Otomatis</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    .copy-text {
+      cursor: pointer;
+      display: inline-block;
+      padding: 14px 18px;
+      background-color: #e0e0ff;
+      border: 1px solid #999;
+      border-radius: 8px;
+      font-size: 20px;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Klik teks untuk menyalin:</h2>
+<p id="output" class="copy-text" onclick="copyText()"></p>
+
+<script>
+function getParam(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name);
+}
+
+function copyText() {
+  const text = document.getElementById("output").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Teks berhasil disalin: " + text);
+  });
+}
+
+const textFromURL = getParam("text");
+if (textFromURL) {
+  document.getElementById("output").innerText = decodeURIComponent(textFromURL);
+}
+</script>
+
+</body>
+</html>
