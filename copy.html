@@ -2,44 +2,83 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Pharos Clipboard</title>
+  <title>Pharos Testnet Info</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 30px;
-      background-color: #f9f9f9;
+      background: #ffffff;
+      padding: 40px;
+      max-width: 400px;
+      margin: auto;
     }
+
+    h2 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
     .copy-box {
-      background: #e0e0e0;
+      background-color: #f4f4f4;
+      padding: 10px;
       border-radius: 8px;
-      padding: 15px;
-      margin-bottom: 10px;
       cursor: pointer;
-      transition: background 0.3s;
-      white-space: pre-line;
+      border: 1px solid #ddd;
+      user-select: none;
     }
+
     .copy-box:hover {
-      background: #d0d0d0;
+      background-color: #e0e0e0;
+    }
+
+    .info {
+      font-size: 0.9em;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-<h2>Klik untuk Salin:</h2>
+<h2>Pharos Testnet</h2>
 
-<div class="copy-box" onclick="copyToClipboard(this)">
-Pharos Testnet
-688688
-https://testnet.dplabs-internal.com
-https://testnet.pharosscan.xyz
-PHRS
+<div class="form-group">
+  <label>Network name</label>
+  <div class="copy-box" onclick="copyToClipboard(this)">Pharos Testnet</div>
+</div>
+
+<div class="form-group">
+  <label>RPC URL</label>
+  <div class="copy-box" onclick="copyToClipboard(this)">https://testnet.dplabs-internal.com</div>
+</div>
+
+<div class="form-group">
+  <label>Chain ID <span class="info">(klik untuk salin)</span></label>
+  <div class="copy-box" onclick="copyToClipboard(this)">688688</div>
+</div>
+
+<div class="form-group">
+  <label>Symbol</label>
+  <div class="copy-box" onclick="copyToClipboard(this)">PHRS</div>
+</div>
+
+<div class="form-group">
+  <label>Block explorer (optional)</label>
+  <div class="copy-box" onclick="copyToClipboard(this)">https://testnet.pharosscan.xyz</div>
 </div>
 
 <script>
 function copyToClipboard(element) {
   const text = element.innerText;
   navigator.clipboard.writeText(text).then(() => {
-    alert("Teks disalin ke clipboard:\n\n" + text);
+    alert("Disalin: " + text);
   }).catch(err => {
     console.error('Gagal menyalin teks:', err);
   });
