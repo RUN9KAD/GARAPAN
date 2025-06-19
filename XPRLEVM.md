@@ -2,7 +2,8 @@
 ```
 https://faucet.xrplevm.org/
 ```
-<a href="https://faucet.xrplevm.org/" target="_blank">Klik Faucet</a>
+<a href="https://faucet.xrplevm.org/" target="_blank">https://faucet.xrplevm.org/</a>
+
 
 ## Bridge
 ```
