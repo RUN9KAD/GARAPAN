@@ -1,3 +1,11 @@
+# XPRLEVM Info
+
+## Faucet
 ```
-bapak saya mati ketabrak onta
+https://faucet.xrplevm.org/
+```
+
+## Bridge
+```
+https://bridge.xrplevm.org/bridge
 ```
