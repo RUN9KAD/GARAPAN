@@ -1,5 +1,0 @@
-## GW AJA YANG TAU
-'''
-CAKCAK HIDEUNG
-
-'''
