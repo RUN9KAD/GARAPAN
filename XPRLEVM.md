@@ -16,3 +16,6 @@ https://xrplevm.moai-finance.xyz/swap
 ```
 https://testnet.xrpl.squidrouter.com/
 ```
+## Faucet
+
+🔗 [Klik untuk buka faucet](https://faucet.xrplevm.org/)
