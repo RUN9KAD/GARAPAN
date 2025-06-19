@@ -18,4 +18,5 @@ https://testnet.xrpl.squidrouter.com/
 ```
 ## Faucet
 
-🔗 [Klik untuk buka faucet](https://faucet.xrplevm.org/)
+<a href="https://faucet.xrplevm.org/" target="_blank">Klik Faucet</a>
+
